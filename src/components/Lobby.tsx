@@ -21,6 +21,15 @@ export default function Lobby({ onCreate, onJoin }: { onCreate: (name: string) =
         >
           加入房间
         </button>
+
+        <div className="mt-2 p-4 bg-zinc-800/50 rounded-lg w-full text-sm text-zinc-300 space-y-2 border border-zinc-700/50">
+          <h3 className="font-bold text-zinc-100 mb-2 flex items-center gap-2">
+            <span>📖</span> 游戏说明
+          </h3>
+          <p>1. <strong className="text-red-400">放置阶段</strong>：每人暗中放置3枚炸弹。</p>
+          <p>2. <strong className="text-blue-400">翻格阶段</strong>：轮流翻开格子或使用<strong className="text-indigo-400">随机轮盘</strong>。</p>
+          <p>3. <strong className="text-green-400">胜利条件</strong>：翻到炸弹扣血（共3滴），活到最后即为胜利！</p>
+        </div>
       </div>
     );
   }
